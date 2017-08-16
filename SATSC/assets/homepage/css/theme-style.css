@@ -635,16 +635,16 @@ p.m_5 {
 /*----Start-mediaquries-for-768px-----*/
 @media(min-width:768px){
 	.con-nav {
-	width: 680px;
+	width: 880px;
 	margin: 0 auto;
 	}
 	.con-nav ul li{
 		padding: 0 20px;
 	}
-	.con-nav ul li.active, .con-nav ul li:hover{
+	.con-nav ul li.active {
 		background-color: #fff;
 	}
-	.con-nav ul li a.active, .con-nav ul li a:hover{
+	.con-nav ul li a.active {
 		color: #333;
 	}
 	li a {
