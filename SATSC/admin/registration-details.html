@@ -9,6 +9,7 @@
     <!-- VENDOR CSS -->
     <link rel="stylesheet" href="../assets/admin/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/admin/vendor/linearicons/style.css">
+    <link rel="stylesheet" href="../assets/admin/vendor/toastr/toastr.min.css">
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="../assets/admin/css/main.css">
     <!-- GOOGLE FONTS -->
@@ -105,22 +106,22 @@
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <h4><strong>Member ID:</strong>1923</h4>
-                                    <h4><strong>First Name:</strong>Mario Roman</h4>
-                                    <h4><strong>Last Name:</strong>Mario Roman</h4>
-                                    <h4><strong>Username:</strong>mrcruz</h4>
-                                    <h4><strong>Member Type:</strong>Jeepney Operator</h4>
-                                    <h4><strong>Gender:</strong>Male</h4>
-                                    <h4><strong>Birthday:</strong>April 14, 1998</h4>
-                                    <h4><strong>Driver's License:</strong>32957-421</h4>
-                                    <h4><strong>Address:</strong>123 Baker Street</h4>
-                                    <h4><strong>Civil Status:</strong>Married</h4>
-                                    <h4><strong>Educational Attainment:</strong>High School</h4>
-                                    <h4><strong>Height:</strong>198 cm</h4>
-                                    <h4><strong>Weight:</strong>51 kg</h4>
-                                    <h4><strong>SSS No:</strong>426246</h4>
-                                    <h4><strong>GSIS No:</strong>1354622</h4>
-                                    <h4><strong>Telephone No:</strong>0986148213</h4>
+                                    <h4><strong>Registration ID:</strong> 1923</h4>
+                                    <h4><strong>Member ID:</strong> 1421</h4>
+                                    <h4><strong>First Name:</strong> Mario Roman</h4>
+                                    <h4><strong>Last Name:</strong> Cruz</h4>
+                                    <h4><strong>Username:</strong> mrcruz</h4>
+                                    <h4><strong>Member Type:</strong> Jeepney Operator</h4>
+                                    <h4><strong>Gender:</strong> Male</h4>
+                                    <h4><strong>Birthday:</strong> April 14, 1998</h4>
+                                    <h4><strong>Driver's License:</strong> 32957-421</h4>
+                                    <h4><strong>Address:</strong> 123 Baker Street</h4>
+                                    <h4><strong>Civil Status:</strong> Married</h4>
+                                    <h4><strong>Educational Attainment:</strong> High School</h4>
+                                    <h4><strong>Height:</strong> 198 cm</h4>
+                                    <h4><strong>Weight:</strong> 51 kg</h4>
+                                    <h4><strong>SSS No:</strong> 426246</h4>
+                                    <h4><strong>Contact No:</strong> 0986148213</h4>
                                 </div>
                             </div>
                             <br><br>
@@ -161,10 +162,14 @@
 
                             <div class="row">
                                 <div class="col-md-3">
-                                    <button type="button" class="btn btn-primary btn-block">Approve Registartion</button>
+                                    <button type="button" class="btn btn-success btn-block btn-toastr" data-context="success" data-message="Mario Roman Registered!" data-position="top-right">
+                                        Approve Registration
+                                    </button>
                                 </div>
                                 <div class="col-md-3">
-                                    <button type="button" class="btn btn-danger btn-block">Deny Registration</button>
+                                    <a href="dashboard.html">
+                                        <button type="button" class="btn btn-danger btn-block">Deny Registration</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -187,6 +192,7 @@
     <script src="../assets/admin/vendor/jquery/jquery.min.js"></script>
     <script src="../assets/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="../assets/admin/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="../assets/admin/vendor/toastr/toastr.min.js"></script>
     <script src="../assets/admin/scripts/klorofil-common.js"></script>
 </body>
 

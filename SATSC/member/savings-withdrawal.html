@@ -9,6 +9,7 @@
 	<!-- VENDOR CSS -->
 	<link rel="stylesheet" href="../assets/admin/vendor/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../assets/admin/vendor/linearicons/style.css">
+    <link rel="stylesheet" href="../assets/admin/vendor/toastr/toastr.min.css">
 	<!-- MAIN CSS -->
 	<link rel="stylesheet" href="../assets/admin/css/main.css">
 	<!-- GOOGLE FONTS -->
@@ -65,44 +66,51 @@
 		</div>
 		<!-- END LEFT SIDEBAR -->
 		<!-- MAIN -->
-		<div class="main">
-			<!-- MAIN CONTENT -->
-			<div class="main-content">
-				<div class="container-fluid">
-					<!-- Savings Withdrawal Form -->
-					<div class="panel">
-						<div class="panel-heading">
-							<h3 class="panel-title"><strong>SAVINGS WITHDRAWAL</strong></h3>
-							<p class="panel-subtitle">Please fill all the required details</p>
-						</div>
-						<div class="panel-body">
-							<h4><strong>Date: </strong>2017-06-12</h4>
-							<h4><strong>Member ID: </strong>14124</h4>
-							<label for="voucher-no">Voucher No:</label>
-							<input type="text" class="form-control" id="voucher-no" placeholder="Voucher No" style="width: 30%">
-							<br>
-							<h4><strong>Member Name: </strong>Joeylene Rivera</h4>
-							<h4><strong>Savings Balance: </strong>43253</h4>
-							<br>
-							<label for="withdrawal-amount">Withdrawal Amount:</label>
-							<input type="text" class="form-control" id="withdrawal-amount" placeholder="Withdrawal Amount" style="width: 30%">
-							<br>
+		
+        <div class="main">
+            <!-- MAIN CONTENT -->
+            <div class="main-content">
+                <div class="container-fluid">
+                    <!-- Savings Withdrawal Form -->
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><strong>SAVINGS WITHDRAWAL</strong></h3>
+                            <p class="panel-subtitle">Please fill all the required details</p>
+                        </div>
+                        <div class="panel-body">
+                            <h4><strong>Date: </strong>2017-06-12</h4>
+                            <h4><strong>Member ID: </strong>14124</h4>
+                            <label for="voucher-no">Voucher No:</label>
+                            <input type="text" class="form-control" id="voucher-no" placeholder="Voucher No" style="width: 30%">
+                            <br>
+                            <h4><strong>Member Name: </strong>Joeylene Rivera</h4>
+                            <h4><strong>Savings Balance: </strong>43253</h4>
+                            <br>
+                            <label for="withdrawal-amount">Withdrawal Amount:</label>
+                            <input type="text" class="form-control" id="withdrawal-amount" placeholder="Withdrawal Amount" style="width: 30%">
+                            <br>
 
-							<div class="row">
-								<div class="col-md-3">
-									<button type="submit" class="btn btn-primary btn-block">Apply</button>
-								</div>
-								<div class="col-md-3">
-									<button type="button" class="btn btn-danger btn-block">Cancel</button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- END Savings Withdrawal Form -->
-				</div>
-			</div>
-			<!-- END MAIN CONTENT -->
-		</div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <button type="button" class="btn btn-success btn-block btn-toastr" data-context="success" data-message="Juan Dela Cruz's Saving's Withdrawal Approved!" data-position="top-right">
+                                        Apply
+                                    </button>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="home.html">
+                                        <button type="button" class="btn btn-danger btn-block">
+                                            Cancel
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Savings Withdrawal Form -->
+                </div>
+            </div>
+            <!-- END MAIN CONTENT -->
+        </div>
 		<!-- END MAIN -->
 		<div class="clearfix"></div>
 		<footer>
@@ -116,6 +124,7 @@
 	<script src="../assets/admin/vendor/jquery/jquery.min.js"></script>
 	<script src="../assets/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
 	<script src="../assets/admin/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="../assets/admin/vendor/toastr/toastr.min.js"></script>
 	<script src="../assets/admin/scripts/klorofil-common.js"></script>
 </body>
 

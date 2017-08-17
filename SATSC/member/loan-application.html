@@ -9,6 +9,7 @@
 	<!-- VENDOR CSS -->
 	<link rel="stylesheet" href="../assets/admin/vendor/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../assets/admin/vendor/linearicons/style.css">
+    <link rel="stylesheet" href="../assets/admin/vendor/toastr/toastr.min.css">
 	<!-- MAIN CSS -->
 	<link rel="stylesheet" href="../assets/admin/css/main.css">
 	<!-- GOOGLE FONTS -->
@@ -65,50 +66,54 @@
 		</div>
 		<!-- END LEFT SIDEBAR -->
 		<!-- MAIN -->
-		<div class="main">
-			<!-- MAIN CONTENT -->
-			<div class="main-content">
-				<div class="container-fluid">
-					<!-- Loan Application Form -->
-					<div class="panel">
-						<div class="panel-heading">
-							<h3 class="panel-title"><strong>LOAN APPLICATION</strong></h3>
-							<p class="panel-subtitle">* means required. Please fill all the required details</p>
-						</div>
-						<div class="panel-body">
-							<h4><strong>Date: </strong>2017-06-12</h4>
-							<h4><strong>Member ID: </strong>2017-1412</h4>
-							<br>
-							<label for="bor-amount">Amount being borrowed:</label>
-							<input type="text" class="form-control" id="bor-amount" placeholder="Amount being borrowed" style="width: 40%">
-							<br>
-							<label for="purpose">Purpose of Loan:</label>
-							<textarea class="form-control" id="purpose" placeholder="Purpose of Loan" rows="4" style="width: 80%"></textarea>
-							<br>
-							<label for="payment-method">Payment Method:</label>
-							<select class="form-control" id="payment-method" style="width: 20%">
+		
+        <div class="main">
+            <!-- MAIN CONTENT -->
+            <div class="main-content">
+                <div class="container-fluid">
+                    <!-- Loan Application Form -->
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><strong>LOAN APPLICATION</strong></h3>
+                            <p class="panel-subtitle">Member's who have past unpaid loan will have their loan application denied.</p>
+                        </div>
+                        <div class="panel-body">
+                            <h4><strong>Date: </strong>2017-06-12</h4>
+                            <h4><strong>Member ID: </strong>2017-0213</h4>
+                            <br>
+                            <label for="bor-amount">Amount being borrowed:</label>
+                            <input type="text" class="form-control" id="bor-amount" placeholder="Amount being borrowed" style="width: 40%">
+                            <br>
+                            <label for="purpose">Purpose of Loan:</label>
+                            <textarea class="form-control" id="purpose" placeholder="Purpose of Loan" rows="4" style="width: 80%"></textarea>
+                            <br>
+                            <label for="payment-method">Payment Method:</label>
+                            <select class="form-control" id="payment-method" style="width: 20%">
 								<option value="">Daily</option>
 								<option value="">Weekly</option>
 								<option value="">Monthly</option>
 							</select>
-							<br>
+                            <br>
 
-							
-							<div class="row">
-								<div class="col-md-3">
-									<button type="button" class="btn btn-primary btn-block">Apply</button>
-								</div>
-								<div class="col-md-3">
-									<button type="button" class="btn btn-danger btn-block">Cancel</button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- END Loan Application Form -->
-				</div>
-			</div>
-			<!-- END MAIN CONTENT -->
-		</div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <button type="button" class="btn btn-success btn-block btn-toastr" data-context="success" data-message="Juan Dela Cruz's Loan Application Approved!" data-position="top-right">
+                                        Apply
+                                    </button>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="home.html">
+                                        <button type="button" class="btn btn-danger btn-block">Cancel</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Loan Application Form -->
+                </div>
+            </div>
+            <!-- END MAIN CONTENT -->
+        </div>
 		<!-- END MAIN -->
 		<div class="clearfix"></div>
 		<footer>
@@ -122,6 +127,7 @@
 	<script src="../assets/admin/vendor/jquery/jquery.min.js"></script>
 	<script src="../assets/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
 	<script src="../assets/admin/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="../assets/admin/vendor/toastr/toastr.min.js"></script>
 	<script src="../assets/admin/scripts/klorofil-common.js"></script>
 </body>
 

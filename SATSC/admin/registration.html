@@ -9,6 +9,7 @@
     <!-- VENDOR CSS -->
     <link rel="stylesheet" href="../assets/admin/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/admin/vendor/linearicons/style.css">
+    <link rel="stylesheet" href="../assets/admin/vendor/toastr/toastr.min.css">
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="../assets/admin/css/main.css">
     <!-- GOOGLE FONTS -->
@@ -105,43 +106,43 @@
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <h4><strong>Member ID:</strong>1923</h4>
-                                    <label for="mem-fname">First Name:</label>
+                                    <h4><strong>Member ID:</strong> 1923</h4>
+                                    <label for="mem-fname">*First Name:</label>
                                     <input type="text" class="form-control" id="mem-fname" placeholder="First Name">
                                     <br>
-                                    <label for="mem-lname">Last Name:</label>
+                                    <label for="mem-lname">*Last Name:</label>
                                     <input type="text" class="form-control" id="mem-lname" placeholder="Last Name">
                                     <br>
-                                    <label for="mem-username">Username:</label>
+                                    <label for="mem-username">*Username:</label>
                                     <input type="text" class="form-control input-size" id="mem-username" placeholder="Username">
                                     <br>
-                                    <label for="mem-password">Password:</label>
+                                    <label for="mem-password">*Password:</label>
                                     <input type="password" class="form-control input-size" id="mem-password" placeholder="Password">
                                     <br>
-                                    <label for="mem-type">Member Type:</label>
+                                    <label for="mem-type">*Member Type:</label>
                                     <select class="form-control input-size" id="mem-type">
 										<option value="O">Jeepney Operator</option>
 										<option value="D">Jeepney Driver</option>
 									</select>
                                     <br>
-                                    <label for="mem-gender">Gender</label>
+                                    <label for="mem-gender">*Gender</label>
                                     <select class="form-control input-size" id="mem-gender">
 										<option value="Male">Male</option>
 										<option value="Female">Female</option>
 									</select>
                                     <br>
-                                    <label for="mem-birthday">Birthday:</label>
+                                    <label for="mem-birthday">*Birthday:</label>
                                     <input type="text" class="form-control input-size" id="mem-birthday" placeholder="Birthday">
                                     <br>
-                                    <label for="mem-drivers-license">Driver's License:</label>
+                                    <label for="mem-drivers-license">*Driver's License:</label>
                                     <input type="text" class="form-control input-size" id="mem-drivers-license" placeholder="Driver's License">
                                     <br>
-                                    <label for="mem-address">Address:</label>
+                                    <label for="mem-address">*Address:</label>
                                     <input type="text" class="form-control" id="mem-address" placeholder="Address">
                                 </div>
                                 <div class="col-md-6">
                                     <br>
-                                    <label for="mem-civil-status">Civil Status:</label>
+                                    <label for="mem-civil-status">*Civil Status:</label>
                                     <select class="form-control input-size" id="mem-civil-status">
 										<option value="">Single</option>
 										<option value="">Married</option>
@@ -171,8 +172,8 @@
                                     <label for="mem-pagibig">Pagibig No:</label>
                                     <input type="text" class="form-control input-size" id="mem-pagibig" placeholder="Pagibig">
                                     <br>
-                                    <label for="mem-tel">Telephone No:</label>
-                                    <input type="text" class="form-control input-size" id="mem-tel" placeholder="Telephone No">
+                                    <label for="mem-tel">*Contact No:</label>
+                                    <input type="text" class="form-control input-size" id="mem-tel" placeholder="Contact No">
                                     <br>
                                 </div>
                             </div>
@@ -225,10 +226,14 @@
 
                             <div class="row">
                                 <div class="col-md-3">
-                                    <button type="button" class="btn btn-primary btn-block">Register</button>
+                                    <button type="button" class="btn btn-success btn-block btn-toastr" data-context="success" data-message="Juan Dela Cruz Registered!" data-position="top-right">
+                                        Register
+                                    </button>
                                 </div>
                                 <div class="col-md-3">
-                                    <button type="button" class="btn btn-danger btn-block">Cancel</button>
+                                    <a href="dashboard.html">
+                                        <button type="button" class="btn btn-danger btn-block">Cancel</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -251,6 +256,7 @@
     <script src="../assets/admin/vendor/jquery/jquery.min.js"></script>
     <script src="../assets/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="../assets/admin/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="../assets/admin/vendor/toastr/toastr.min.js"></script>
     <script src="../assets/admin/scripts/klorofil-common.js"></script>
 </body>
 

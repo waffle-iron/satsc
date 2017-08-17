@@ -9,6 +9,7 @@
     <!-- VENDOR CSS -->
     <link rel="stylesheet" href="../assets/admin/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/admin/vendor/linearicons/style.css">
+    <link rel="stylesheet" href="../assets/admin/vendor/toastr/toastr.min.css">
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="../assets/admin/css/main.css">
     <!-- GOOGLE FONTS -->
@@ -117,10 +118,16 @@
 
                             <div class="row">
                                 <div class="col-md-3">
-                                    <button type="submit" class="btn btn-primary btn-block">Apply</button>
+                                    <button type="button" class="btn btn-success btn-block btn-toastr" data-context="success" data-message="Juan Dela Cruz's Saving's Withdrawal Approved!" data-position="top-right">
+                                        Apply
+                                    </button>
                                 </div>
                                 <div class="col-md-3">
-                                    <button type="button" class="btn btn-danger btn-block">Cancel</button>
+                                    <a href="dashboard.html">
+                                        <button type="button" class="btn btn-danger btn-block">
+                                            Cancel
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -143,6 +150,7 @@
     <script src="../assets/admin/vendor/jquery/jquery.min.js"></script>
     <script src="../assets/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="../assets/admin/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="../assets/admin/vendor/toastr/toastr.min.js"></script>
     <script src="../assets/admin/scripts/klorofil-common.js"></script>
 </body>
 

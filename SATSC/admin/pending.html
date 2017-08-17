@@ -9,6 +9,7 @@
     <!-- VENDOR CSS -->
     <link rel="stylesheet" href="../assets/admin/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/admin/vendor/linearicons/style.css">
+    <link rel="stylesheet" href="../assets/admin/vendor/toastr/toastr.min.css">
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="../assets/admin/css/main.css">
     <!-- GOOGLE FONTS -->
@@ -118,49 +119,61 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <th>00003</th>
-                                        <th>Cruz, Mario Roman</th>
-                                        <th>306.00</th>
-                                        <th>2017-3-20</th>
-                                        <th>Daily</th>
-                                        <th>Personal</th>
-                                        <th>
+                                        <td>00003</td>
+                                        <td>Cruz, Mario Roman</td>
+                                        <td>306.00</td>
+                                        <td>2017-3-20</td>
+                                        <td>Daily</td>
+                                        <td>Personal</td>
+                                        <td>
                                             <input type="text" class="form-control" placeholder="Voucher No">
-                                        </th>
-                                        <th>
-                                            <button type="submit" class="btn btn-primary btn-block">Approve</button>
-                                            <button type="button" class="btn btn-danger btn-block">Decline</button>
-                                        </th>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-success btn-block btn-toastr" data-context="success" data-message="Juan Dela Cruz's Loan Application Approved!" data-position="top-right">
+                                                Approve
+                                            </button>
+                                            <button type="button" class="btn btn-danger btn-block btn-toastr" data-context="error" data-message="Juan Dela Cruz's Loan Application Denied!" data-position="top-right">
+                                                Deny
+                                            </button>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <th>00003</th>
-                                        <th>Cruz, Mario Roman</th>
-                                        <th>306.00</th>
-                                        <th>2017-3-20</th>
-                                        <th>Daily</th>
-                                        <th>Personal</th>
-                                        <th>
+                                        <td>00003</td>
+                                        <td>Cruz, Mario Roman</td>
+                                        <td>306.00</td>
+                                        <td>2017-3-20</td>
+                                        <td>Daily</td>
+                                        <td>Personal</td>
+                                        <td>
                                             <input type="text" class="form-control" placeholder="Voucher No">
-                                        </th>
-                                        <th>
-                                            <button type="submit" class="btn btn-primary btn-block">Approve</button>
-                                            <button type="button" class="btn btn-danger btn-block">Decline</button>
-                                        </th>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-success btn-block btn-toastr" data-context="success" data-message="Juan Dela Cruz's Loan Application Approved!" data-position="top-right">
+                                                Approve
+                                            </button>
+                                            <button type="button" class="btn btn-danger btn-block btn-toastr" data-context="error" data-message="Juan Dela Cruz's Loan Application Denied!" data-position="top-right">
+                                                Deny
+                                            </button>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <th>00003</th>
-                                        <th>Cruz, Mario Roman</th>
-                                        <th>306.00</th>
-                                        <th>2017-3-20</th>
-                                        <th>Daily</th>
-                                        <th>Personal</th>
-                                        <th>
+                                        <td>00003</td>
+                                        <td>Cruz, Mario Roman</td>
+                                        <td>306.00</td>
+                                        <td>2017-3-20</td>
+                                        <td>Daily</td>
+                                        <td>Personal</td>
+                                        <td>
                                             <input type="text" class="form-control" placeholder="Voucher No">
-                                        </th>
-                                        <th>
-                                            <button type="submit" class="btn btn-primary btn-block">Approve</button>
-                                            <button type="button" class="btn btn-danger btn-block">Decline</button>
-                                        </th>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-success btn-block btn-toastr" data-context="success" data-message="Juan Dela Cruz's Loan Application Approved!" data-position="top-right">
+                                                Approve
+                                            </button>
+                                            <button type="button" class="btn btn-danger btn-block btn-toastr" data-context="error" data-message="Juan Dela Cruz's Loan Application Denied!" data-position="top-right">
+                                                Deny
+                                            </button>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -184,6 +197,7 @@
     <script src="../assets/admin/vendor/jquery/jquery.min.js"></script>
     <script src="../assets/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="../assets/admin/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="../assets/admin/vendor/toastr/toastr.min.js"></script>
     <script src="../assets/admin/scripts/klorofil-common.js"></script>
 </body>
 
