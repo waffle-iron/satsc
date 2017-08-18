@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/plmXenogear/satsc.png?label=ready&title=Ready)](https://waffle.io/plmXenogear/satsc?utm_source=badge)
 # Game Engine++ (GE++) Compiler
 
 SATSC is a cooperative website built with Code Igniter. It is an iterative project for System Analysis Design/Database Management System/Software Engineering, and a partial requirement Bachelor of Science in Computer Studies Major in Computer Science
